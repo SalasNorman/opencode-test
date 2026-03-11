@@ -166,7 +166,7 @@ const App = (() => {
     },
 
     renderFooter(name) {
-      document.getElementById('footer-text').textContent = `© ${new Date().getFullYear()} ${name.toUpperCase()} - GAME OVER`;
+      document.getElementById('footer-text').textContent = `© ${new Date().getFullYear()} ${name.toUpperCase()}`;
     }
   };
 
