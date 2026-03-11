@@ -1,0 +1,90 @@
+{
+  "hero": {
+    "profilePic": "profile-pic.png",
+    "profileAlt": "John Developer profile",
+    "name": "John Developer",
+    "role": "Full Stack Engineer",
+    "tagline": "Ready to play? Let's build something awesome."
+  },
+  "experience": [
+    {
+      "title": "Senior Developer",
+      "company": "Tech Corp",
+      "period": "2022 - Present",
+      "description": [
+        "Led development of main product",
+        "Mentored junior developers",
+        "Implemented CI/CD pipelines"
+      ]
+    },
+    {
+      "title": "Web Developer",
+      "company": "Startup Inc",
+      "period": "2020 - 2022",
+      "description": [
+        "Built responsive web applications",
+        "Worked with REST APIs",
+        "Optimized performance"
+      ]
+    },
+    {
+      "title": "Junior Developer",
+      "company": "Web Agency",
+      "period": "2018 - 2020",
+      "description": [
+        "Developed client websites",
+        "Learned modern frameworks",
+        "Collaborated with design team"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "Project Alpha",
+      "description": "A full-stack web application for task management with real-time collaboration features.",
+      "tech": ["React", "Node.js", "MongoDB"],
+      "codeUrl": "https://github.com/username/project-alpha",
+      "demoUrl": "https://demo-project-alpha.com",
+      "image": "project_img_holder.png",
+      "imageAlt": "Project Alpha preview"
+    },
+    {
+      "title": "Project Beta",
+      "description": "E-commerce platform with payment integration and inventory management system.",
+      "tech": ["Vue.js", "Python", "PostgreSQL"],
+      "codeUrl": "https://github.com/username/project-beta",
+      "demoUrl": "https://demo-project-beta.com",
+      "image": "project_img_holder.png",
+      "imageAlt": "Project Beta preview"
+    },
+    {
+      "title": "Project Gamma",
+      "description": "Mobile-first social app with chat functionality and location-based features.",
+      "tech": ["React Native", "Firebase", "Maps API"],
+      "codeUrl": "https://github.com/username/project-gamma",
+      "demoUrl": "https://demo-project-gamma.com",
+      "image": "project_img_holder.png",
+      "imageAlt": "Project Gamma preview"
+    },
+    {
+      "title": "Project Delta",
+      "description": "API gateway service with authentication, rate limiting, and monitoring.",
+      "tech": ["Go", "Docker", "Kubernetes"],
+      "codeUrl": "https://github.com/username/project-gamma",
+      "image": "project_img_holder.png",
+      "imageAlt": "Project Delta preview"
+    },
+    {
+      "title": "Project Test",
+      "description": "A test project with no links.",
+      "tech": ["Test"],
+      "image": "project_img_holder.png",
+      "imageAlt": "Project Test preview"
+    }
+  ],
+  "contact": {
+    "email": "hello@example.com",
+    "github": "https://github.com",
+    "linkedin": "https://linkedin.com"
+  }
+}
