@@ -70,10 +70,16 @@
       "title": "Project Delta",
       "description": "API gateway service with authentication, rate limiting, and monitoring.",
       "tech": ["Go", "Docker", "Kubernetes"],
-      "codeUrl": "https://github.com/username/project-delta",
-      "demoUrl": "https://demo-project-delta.com",
+      "codeUrl": "https://github.com/username/project-gamma",
       "image": "project_img_holder.png",
       "imageAlt": "Project Delta preview"
+    },
+    {
+      "title": "Project Test",
+      "description": "A test project with no links.",
+      "tech": ["Test"],
+      "image": "project_img_holder.png",
+      "imageAlt": "Project Test preview"
     }
   ],
   "contact": {

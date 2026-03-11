@@ -135,20 +135,23 @@ const App = (() => {
     },
 
     renderProjects(projects) {
-      document.getElementById('projects-container').innerHTML = projects.map(p => `
-        <article class="project-card">
-          <img src="${p.image}" alt="${p.imageAlt}" class="project-image" />
-          <div class="project-info">
-            <h3 class="project-title">${p.title}</h3>
-            <p class="project-description">${p.description}</p>
-            <div class="project-tech">${p.tech.map(t => `<span class="tech-tag">${t}</span>`).join('')}</div>
-            <div class="project-links">
-              <a href="${p.codeUrl}" target="_blank" rel="noopener noreferrer" class="project-link">Show Code</a>
-              <a href="${p.demoUrl}" target="_blank" rel="noopener noreferrer" class="project-link">Live Demo</a>
+      document.getElementById('projects-container').innerHTML = projects.map(p => {
+        const links = [];
+        if (p.codeUrl) links.push(`<a href="${p.codeUrl}" target="_blank" rel="noopener noreferrer" class="project-link">Show Code</a>`);
+        if (p.demoUrl) links.push(`<a href="${p.demoUrl}" target="_blank" rel="noopener noreferrer" class="project-link">Live Demo</a>`);
+        
+        return `
+          <article class="project-card">
+            <img src="${p.image}" alt="${p.imageAlt}" class="project-image" />
+            <div class="project-info">
+              <h3 class="project-title">${p.title}</h3>
+              <p class="project-description">${p.description}</p>
+              <div class="project-tech">${p.tech.map(t => `<span class="tech-tag">${t}</span>`).join('')}</div>
+              ${links.length ? `<div class="project-links">${links.join('')}</div>` : ''}
             </div>
-          </div>
-        </article>
-      `).join('');
+          </article>
+        `;
+      }).join('');
     },
 
     renderContact(contact) {
